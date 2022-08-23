@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPT Bundle</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/c6f3140d93.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- 겨울 컨셉  / 끝에는 봄-->
+    <div id="onepage">
+        <section class="s1 fallenSnow">
+            <div class="bGMountainWrap">
+                <div v-for="(item , index) in myArray" class="mountain">{{index}} </div>
+            </div>
+        </section>
+        <!-- 여기서부터는 오른쪽으로 이동 -->
+        <section class="s2"></section>
+        <section class="s3"></section>
+        <section class="s4"></section>
+        <section class="s5"></section>
+        <section class="s6"></section>
+        <section class="s7"></section>
+    </div>
+</body>
+</html>
