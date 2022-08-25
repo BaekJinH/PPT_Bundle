@@ -1,21 +1,17 @@
 @charset "utf-8";
 
 body {
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
-
 
 #onepage > section {
     width:100vw;
     height:100vh;
 }
-canvas {
-    width:100vw ;
-    height:100vh;
-}
+
 #onepage {
     section:nth-of-type(1) {
-        background-color:black
+
     }
     section:nth-of-type(2) {
         background-color:#eee
@@ -36,29 +32,4 @@ canvas {
         background-color:lightgray
     }
 }
-
-.s1 {
-    .fallenSnow {
-        width:100%;
-        height:100%;
-        display:flex;
-        align-items: flex-end;
-    }
-    .bGMountainWrap {
-        width:100%;
-        height:100%;
-        z-index:15;
-        position:relative;
-        overflow: hidden;
-
-        .mountain  {
-            bottom: 0;
-            width:30vw;
-            height:50vh;
-            background-color:white;
-            position:absolute;
-        }
-    }
-}
-
 

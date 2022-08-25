@@ -5,28 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PPT Bundle</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/c6f3140d93.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+
 </head>
 <body>
+    <div class="btnWrap">
+        <div class="hambuger"></div>
+    </div>
     <!-- 겨울 컨셉  / 끝에는 봄-->
     <div id="onepage">
         <section class="s1 fallenSnow">
-            <div class="bGMountainWrap">
-                <div v-for="(item , index) in myArray" class="mountain">{{index}} </div>
-            </div>
+            <svg id="visual" viewBox="0 0 1920 937" width="1920" height="937" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="1920" height="937" fill="#00121a"></rect><path d="M0 795L53.3 789.7C106.7 784.3 213.3 773.7 320 767.3C426.7 761 533.3 759 640 759.8C746.7 760.7 853.3 764.3 960 765.8C1066.7 767.3 1173.3 766.7 1280 773.3C1386.7 780 1493.3 794 1600 800.2C1706.7 806.3 1813.3 804.7 1866.7 803.8L1920 803L1920 938L1866.7 938C1813.3 938 1706.7 938 1600 938C1493.3 938 1386.7 938 1280 938C1173.3 938 1066.7 938 960 938C853.3 938 746.7 938 640 938C533.3 938 426.7 938 320 938C213.3 938 106.7 938 53.3 938L0 938Z" fill="#c9c9c9" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+
         </section>
+        <section class="s2">
         <!-- 여기서부터는 오른쪽으로 이동 -->
-        <section class="s2"></section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
         <section class="s3"></section>
         <section class="s4"></section>
         <section class="s5"></section>
         <section class="s6"></section>
         <section class="s7"></section>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js">
+        var s = skrollr.init();
+    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
