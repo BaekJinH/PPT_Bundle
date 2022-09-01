@@ -476,3 +476,4 @@ var HEIGHT,WIDTH;
     }
     
     window.requestAnimationFrame(AnimateBaseFrequency);
+

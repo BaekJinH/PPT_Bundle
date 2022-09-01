@@ -28,6 +28,18 @@ body {
   position: relative;
 }
 
+.fa-snowflake {
+  color: #fff;
+  position:absolute;
+  top:0px;
+  animation:fall linear forwards;
+  z-index: 0;
+}
+@keyframes fall {
+  to {
+    transform : translateY(105vh)
+  }
+}
 
 .bgNight {
   position: absolute;
@@ -456,6 +468,12 @@ canvas {
   transform: translate(0%, 0%);
   z-index: 0;
 }
+.land > img:first-child {
+  position:absolute;
+  bottom:-7%;
+  left:-1%;
+  z-index: -1;
+}
 
 .sun {
   position: absolute;
@@ -468,7 +486,7 @@ canvas {
   max-height: 500px;
   width: 100%;
   height: 100%;
-  background: linear-gradient(244deg, rgb(194 57 240 / 64%), rgb(52 78 233 / 73%));
+  /* background: linear-gradient(244deg, rgb(194 57 240 / 64%), rgb(52 78 233 / 73%)); */
 }
 
 .ship {
