@@ -17,6 +17,14 @@ let main = gsap.timeline({
 
 
 
+// hambuger menu
+$('.btnWrap').click(function(){
+    $('.hambuger').toggleClass('active');
+    $('nav').toggleClass('active');
+    $(this).stop().css({zIndex:15})
+})
+
+
 
 // //스크롤 탑 값
 // window.addEventListener("scroll", function () {
@@ -150,7 +158,7 @@ const date = document.querySelector(".date");
 
 //모달에 출력되어야할 값들의 배열
 const modalInfo = [{
-    url: "https://seol1059.github.io/project1/",
+    url: "https://baekjinh.github.io/project_1/",
     bg:"background-image: url('./assets/img/1.png')",
     client: "STUDY",
     description: "WEB PROP SHOP SITE",

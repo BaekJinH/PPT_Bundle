@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/c6f3140d93.js" crossorigin="anonymous"></script>
     <script src="js/snow.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0FSJSBYMZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T0FSJSBYMZ');
+    </script>
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "163a7aa21b8dc50";
+    if(window.wcs) {
+      wcs_do();
+    }
+    </script>
 </head>
 <body>
     <i class="fa-solid fa-snowflake"></i>
@@ -21,8 +38,21 @@
     </div> -->
 
     <div class="btnWrap">
-        <div class="hambuger"></div>
+        <div class="hambuger">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+        </div>
     </div>
+    <nav class="navBox">
+       <ul>
+            <li><a href="">Main</a></li>
+            <li><a href="">Profile</a></li>
+            <li><a href="">Intro</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">PPT</a></li>
+       </ul> 
+    </nav>
     <!-- 겨울 컨셉  / 끝에는 봄-->
     <!-- <div class="paraScroll"><span>0</span></div> -->
     <!-- <div class="info left">
@@ -107,7 +137,7 @@
             </div>
             <div class="name" data-0="opacity: 1" data-1000="opacity: 0">
                 <div>
-                    <h2>Baek Jin Hyeok</h2><br>
+                    <h2>Baek Jin Hyeok</h2>
                     <!-- <strong>WEB PUBLISHER PORTFOLIO SITE</strong> -->
                 </div>
             </div>
@@ -155,8 +185,27 @@
                     <p></p>
                 </div>
             </div>
-            <div class="intSelf">
-                <h3 data-2000="opacity: 0" data-2500="opacity:1">저를 소개합니다.</h3>
+            <div class="profileTitle">
+                <h3 data-1500="opacity: 0" data-2000="opacity:1">저를 소개합니다.</h3>
+            </div>
+
+
+            
+            <div class="img_textWrap" data-1600="opacity:0; top:20%;" data-2100="opacity:1; top:15%;">
+                <div class="circleProfile">
+                    <img src="" alt="profile">
+                <!-- svg파일 / 몽글한 이미지 -->
+                </div>
+            </div>
+            <div class="underText" data-1600="opacity:0; top:35%;" data-2100="opacity:1; top:30%;">
+                <h4>방문해주셔서 감사합니다.</h4>
+                <br>
+                <p>24살 프론트 엔드 개발자를 희망하고 있는 백진혁입니다.
+                    ~~~long TEXT
+                </p>
+            </div>
+            <div class="gitUrl">
+
             </div>
         </section>
         <!-- //section01 -->
@@ -188,7 +237,10 @@
             <div class="s2 fixed" data-3508="transform: translate(0%, 100%);  display:none;"
                 data-3509="transform: translate(0%, 100%);  display:block;"
                 data-4409="transform: translate(0%, 0%);  display:block;" data-6700="transform: translate(-100%, 0%);">
-
+                
+                <div class="mySelfTitle">
+                    <h3>저는요</h3>
+                </div>
                 
                 <div class="stoneLeft">
                     <!-- <img src="./assets/img/stoneLeft.svg" alt="stoneLeft"> -->
@@ -243,10 +295,8 @@
                         src="./assets/img/hippocampus3_1.svg" alt="hippocampus3.svg">
                 </div>
                 <div class="miniFish" data-3700="left: 10%;" data-10000="left: -30%;">
-                    <!-- <img src="./assets/img/miniFish1.svg" alt="miniFish.svg"> -->
                 </div>
                 <div class="miniFish miniFish2" data-3700="left: 10%;" data-10000="left: -30%;">
-                    <!-- <img src="./assets/img/miniFish2.svg" alt="miniFish.svg"> -->
                 </div>
                 <div class="yellFish1">
                     <!-- <img
@@ -255,7 +305,6 @@
                     <div class="nimoFish">
                         <!-- <img src="./assets/img/nimoFish_1.svg" alt="nimoFish.svg"> -->
                         <div class="nimoFish2">
-                            <!-- <img src="./assets/img/nimoFish2_1.svg" alt="nimoFish2.svg"> -->
                         </div>
                     </div>
                 </div>
@@ -265,47 +314,56 @@
 
         <section id="section03">
             <div class="s3 fixed" data-4399="left: 150%; display:none;" data-4400="left: 150%; display:block;"
-                data-6700="left: 50%;" data-9000="left: -100%;">
+                data-6700="left: 50%;" data-9000="left: -110%;">
+                                                <!-- 원래는 left: -100% -->
                 <!-- <div class="floor"><img src="./assets/img/floor2.svg" alt="floor2"></div> -->
                 <!-- <div class="octopus"><img src="./assets/img/100.webp" alt="octopus"></div> -->
                 <div class="skillTitle">
-                    <h2>제가 잘 하는 것</h2>
+                    <h2>제가 할 수 있는 것들은</h2>
                 </div>
                 <div class="skill">
                     <ul>
-                        <li class="skill_one" data-6000="opacity: 0; bottom: 45%" data-6400="opacity: 1; bottom: 50%">
-                            <!-- <div class="skillType">DESGIN</div>
+                        <li class="skill_one" data-6000="opacity: 0; bottom: 30%" data-6400="opacity: 1; bottom: 40%">
+                            <div class="skillType">DESGIN</div>
                             <div class="skillName">PhotoShop</div>
-                            <div class="skillNumber">95%</div> -->
+                            <div class="skillNumber">75%</div>
                         </li>
+
                         <li class="skill_two" data-6400="opacity: 0; bottom: 40%" data-6700="opacity: 1; bottom: 45%">
-                            <!-- <div class="skillType">DESGIN</div>
-                            <div class="skillName">illustration</div>
-                            <div class="skillNumber">80%</div> -->
+                            <div class="skillType">DESGIN</div>
+                            <div class="skillName">UI / UX</div>
+                            <div class="skillNumber">70%</div>
                         </li>
 
                         <li class="skill_three" data-6500="opacity: 0; bottom: 35%" data-6900="opacity: 1; bottom: 55%">
-                            <!-- <div class="skillType">DESGIN</div>
-                            <div class="skillName">premierepro</div>
-                            <div class="skillNumber">70%</div> -->
+                            <div class="skillType">DEVELOPMENT</div>
+                            <div class="skillName">HTML5 , CSS3(SCSS)</div>
+                            <div class="skillNumber">95%</div>
                         </li>
 
-                        <li class="skill_four" data-6700="opacity: 0; bottom: 45%" data-7000="opacity: 1; bottom: 38%">
-                            <!-- <div class="skillType">DEVELOPMENT</div>
-                            <div class="skillName">HTML5, CSS3(SCSS)</div>
-                            <div class="skillNumber">95%</div> -->
-                        </li>
-                        <li class="skill_five" data-7000="opacity: 0; bottom: 35%" data-7300="opacity: 1; bottom: 35%">
-                            <!-- <div class="skillType">DEVELOPMENT</div>
+                        <li class="skill_four" data-6700="opacity: 0; bottom: 30%" data-7000="opacity: 1; bottom: 45%">
+                            <div class="skillType">DEVELOPMENT</div>
                             <div class="skillName">Javascript</div>
-                            <div class="skillNumber">80%</div> -->
-                        </li>
-                        <li class="skill_six" data-7300="opacity: 0; bottom: 30%" data-7600="opacity: 1; bottom: 30%">
-                            <!-- <div class="skillType">DEVELOPMENT</div>
-                            <div class="skillName">jQuery</div>
-                            <div class="skillNumber">80%</div> -->
+                            <div class="skillNumber">80%</div>
                         </li>
 
+                        <li class="skill_five" data-7000="opacity: 0; bottom: 20%" data-7300="opacity: 1; bottom: 40%">
+                            <div class="skillType">DEVELOPMENT</div>
+                            <div class="skillName">jQuery</div>
+                            <div class="skillNumber">80%</div>
+                        </li>
+                        
+                        <li class="skill_six" data-7300="opacity: 0; bottom: 20%" data-7600="opacity: 1; bottom: 40%">
+                            <div class="skillType">DEVELOPMENT</div>
+                            <div class="skillName">Vue JS</div>
+                            <div class="skillNumber">70%</div>
+                        </li>
+
+                        <li class="skill_seven" data-7600="opacity: 0; bottom: 30%" data-7900="opacity: 1; bottom: 35%">
+                            <div class="skillType">DEVELOPMENT</div>
+                            <div class="skillName">AJAX</div>
+                            <div class="skillNumber">60%</div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -319,6 +377,9 @@
                 data-9000="left: -1%; display:block;" data-9730="left: -50%; display:block"
                 data-17730="left: -50%; display:none">
                 <!-- <div class="floor"><img src="./assets/img/floor3.svg" alt="floor3"></div> -->
+                <div class="pptImage">
+                    
+                </div>
                 <div class="cave" data-9830="transform: translate(0%, 0%)"
                     data-10999="transform: translate(0%, 100%)%; display: block;"
                     data-11000="transform: translate(0%, 100%)%; display: none;">
@@ -666,6 +727,11 @@
                 </div>
                 <div class="modalBgFix">
                     <div id="modal">
+                        <div class="modalWrap">
+                            <div class="project"></div>
+                            <div class="projectWrap"></div>
+
+                        </div>
                     </div>
                 </div>
             </div>
