@@ -41,6 +41,13 @@ body {
   }
 }
 
+#loadingPage {
+  width:100vw;
+  height:100vh;
+
+}
+
+
 .bgNight {
   position: absolute;
   bottom: 0;
@@ -580,6 +587,20 @@ canvas {
   top: 0;
 }
 
+.intSelf {
+  position: absolute;
+  left:50%;
+  top:10%;
+  transform: translateX(-50%);
+}
+
+.intSelf > h3 {
+  font-size:30px;
+  color:White;
+  font-weight: 200;
+
+}
+
 
 .bubble {
   background: rgb(255, 255, 255);
@@ -673,6 +694,8 @@ canvas {
   z-index: 2;
   width: 100%;
 }
+
+
 
 /* .sealWrap {} */
 
@@ -1037,6 +1060,7 @@ canvas {
 .skillTitle h2 {
   font-size: 24px;
   font-weight: 200;
+  color:white;
 }
 
 /* .skill {}

@@ -22,14 +22,14 @@ function createSnowFlake() {
     
 const mainLine = document.getElementById('contents');
 
-setInterval(fallenSnow , 100)
+setInterval(fallenSnow , 100);
 
 function fallenSnow () {
     const snowPiece = document.createElement('i');
     snowPiece.classList.add('fa-solid');
     snowPiece.classList.add('fa-snowflake');
     snowPiece.style.left = Math.random() * window.innerWidth + 'px';
-    snowPiece.style.animationDuration = Math.random() * 3 + 2 + 's'; // between 2 - 5 seconds
+    snowPiece.style.animationDuration = Math.random() * 3 + 2 + 's';
     snowPiece.style.opacity = Math.random();
     snowPiece.style.fontSize = Math.random() * 10 + 10 + 'px';
     
