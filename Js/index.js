@@ -15,15 +15,7 @@ let main = gsap.timeline({
     }
 });
 
-// //메인에서 해 트리거
-// main.to(".sun", {
-//     scrollTrigger: {
-//         trigger: ".sun",
-//         start: "bottom center",
-//         scrub: 2,
-//     },
-// y: 600, duration: 2,
-// }); 
+
 
 
 // //스크롤 탑 값
@@ -145,40 +137,6 @@ function random(min, max) {
 //아메바
 
 
-
-// for (var i = 0; i < 20; i++) {  //물방울 수
-//     var bubble = document.createElement('div');
-//     bubble.className = 'bubble';
-//     var set = Math.random() * 30 + 10 + 'px';   //랜덤 픽셀값
-
-//     bubble.style.width = set;
-//     bubble.style.height = set;
-//     bubble.style.bottom = Math.random() * 4000 + 'px';
-//     bubble.style.left = Math.random() * document.querySelector("#contents").offsetWidth + 'px';
-
-//     document.querySelector("#contents").appendChild(bubble);
-
-//     Animate(bubble)
-// }
-
-// // 물방울 애니메이션
-// function Animate(set) {
-//     $(set).animate({
-//         bottom: document.querySelector("#contents").offsetHeight + 'px',
-//         left: '+=' + ((Math.random() * 100) - 50) + 'px'
-//     }, Math.random() * 12000 + 5000, 'linear', function() {
-//         set.style.bottom = '0px';
-//         Animate(set)
-//     });
-// }
-// 물방울
-
-// const modal = document.querySelector('.modalWrap');
-// const standard = document.getElementById('standard');
-
-// standard.addEventListener('click', function(){
-//     modal.classList.add('view');
-// })
 
 
 const modal = document.querySelector("#modal");
