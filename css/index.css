@@ -848,12 +848,12 @@ canvas {
   top: 0%;
 }
 
-.mySelfTitle {
+#mySelfTitle {
   position:absolute;
   left:15%;
   bottom:17%;
 }
-.mySelfTitle > h3 {
+#mySelfTitle > h3 {
   font-size:24px;
   color:white;
   font-weight:200;

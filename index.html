@@ -13,25 +13,24 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0FSJSBYMZ"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'G-T0FSJSBYMZ');
+        gtag('config', 'G-T0FSJSBYMZ');
     </script>
     <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
     <script type="text/javascript">
-    if(!wcs_add) var wcs_add = {};
-    wcs_add["wa"] = "163a7aa21b8dc50";
-    if(window.wcs) {
-      wcs_do();
-    }
+        if(!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "163a7aa21b8dc50";
+        if(window.wcs) {
+        wcs_do();
+        }
     </script>
 </head>
 <body>
     <i class="fa-solid fa-snowflake"></i>
     
-
     <!-- <div id="loadingPage">
         <div></div>
 
@@ -39,15 +38,15 @@
 
     <div class="btnWrap">
         <div class="hambuger">
-            <span class="line top"></span>
-            <span class="line middle"></span>
-            <span class="line bottom"></span>
+            <span class="line top" data-100="background:white" data-2100="background:black" data-2200="background:white"></span>
+            <span class="line middle" data-100="background:white" data-2080="background:black" data-2180="background:white"></span>
+            <span class="line bottom" data-100="background:white" data-2060="background:black" data-2160="background:white"></span>
         </div>
     </div>
     <nav class="navBox">
        <ul>
-            <li><a href="">Main</a></li>
-            <li><a href="">Profile</a></li>
+            <li><a href="#main">Main</a></li>
+            <li><a href="#section01">Profile</a></li>
             <li><a href="">Intro</a></li>
             <li><a href="">Skills</a></li>
             <li><a href="">PPT</a></li>
@@ -116,6 +115,10 @@
         <i class="fas fa-snowflake"></i>
 
         <div class="m1">
+            <!-- 키 입력 애니메이션도 생각해보기 (깜빡깜빡) -->
+            <div class="textBindAnimate">
+                
+            </div>
             <!-- <div class="sun" data-0="top:45%" data-1000="top: 60%"></div> -->
             <div class="land">
                 <img src="img/mountMain_white.svg" alt="">
@@ -238,7 +241,7 @@
                 data-3509="transform: translate(0%, 100%);  display:block;"
                 data-4409="transform: translate(0%, 0%);  display:block;" data-6700="transform: translate(-100%, 0%);">
                 
-                <div class="mySelfTitle">
+                <div id="mySelfTitle">
                     <h3>저는요</h3>
                 </div>
                 
