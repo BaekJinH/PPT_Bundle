@@ -25,6 +25,12 @@ $('.btnWrap').click(function(){
 })
 
 
+const hambug = document.getElementsByClassName('hambuger')[0]
+
+function hambugerColor () {
+
+}
+
 
 // //스크롤 탑 값
 // window.addEventListener("scroll", function () {
