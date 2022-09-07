@@ -16,6 +16,41 @@ let main = gsap.timeline({
 });
 
 
+// 텍스트 깜빡임 효과
+const content = "방문해주셔서 감사합니다."
+
+const text = document.querySelector('.typingText');
+let index = 0 ;
+
+function sleep (delay) {
+    const start = new Data(). getTime();
+    while (new Data ().getTime() < start + delay);
+}
+
+function typing() {
+    text.textContent += content[index++];
+    if(index > content.length) {
+        text.textContent = '';
+        index = 0;
+        sleep (3000)
+    }
+}
+
+setInterval (typing , 400)
+
+
+// 텍스트 깜빡임 2
+let target = document.querySelector('.typingText');
+
+function randomString () {
+    let stringArr = []
+}
+
+
+
+
+
+
 
 // hambuger menu
 $('.btnWrap').click(function(){

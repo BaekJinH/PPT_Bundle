@@ -90,7 +90,7 @@ nav.active {
 }
 
 .navBox {
-  width:23vw;
+  width:17vw;
   height:100%;
   background-color: white;
   position:fixed;
@@ -452,6 +452,25 @@ li.active .band {
   /* background: #d9e5fa; */
   position: relative;
 }
+
+.typingText {
+  display: inline;
+  vertical-align: middle;
+  border-right: .05em solid white;
+  animation: cursor 0.9s ease infinite;
+  color:white
+}
+
+@keyframes cursor {
+  from {
+    border-right: 2px solid #111;
+  }
+  to {
+    border-right: 2px solid white;
+  }
+  
+}
+
 
 .container {
   max-width: 90%;
