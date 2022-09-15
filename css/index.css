@@ -457,9 +457,9 @@ li.active .band {
   position:absolute;
   top:35%;
   left:50%;
-  transform: translate(-50%,-50%);
+  /* transform: translate(-50%,-50%); */
   font-size:30px;
-
+  translate : -50% -50%;
 }
 
 
@@ -469,7 +469,7 @@ li.active .band {
   border-right: .05em solid white;
   animation: cursor 0.9s ease infinite;
   color:white;
-  font-size:30px;
+  font-size:1.5em;
 }
 
 @keyframes cursor {
