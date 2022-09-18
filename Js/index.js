@@ -46,11 +46,13 @@ function randomString () {
     let stringArr = []
 }
 
+$(window).scroll(function () {
+    var scrollValue = $(this).scrollTop();
 
-
-
-
-
+    if (scrollValue > $('#section08').offset().top) {
+        // $('.fa-snowflake').css({display:'none'})
+    }
+})
 
 // hambuger menu
 $('.btnWrap').click(function(){
@@ -65,6 +67,104 @@ const hambug = document.getElementsByClassName('hambuger')[0]
 function hambugerColor () {
 
 }
+
+
+
+// skill 스크립트
+
+let number =  document.getElementById('number1');
+let counter = 0;
+setInterval(() => {
+    if(counter == 75) {
+        clearInterval () ;
+    }
+    else {
+        counter += 1;
+        number.innerHTML = counter + '%';    
+    }
+}, 30) ;
+
+
+let number2 =  document.getElementById('number2');
+let counter2 = 0;
+setInterval(() => {
+    if(counter2 == 70) {
+        clearInterval () ;
+    }
+    else {
+        counter2 += 1;
+        number2.innerHTML = counter2 + '%';    
+    }
+}, 30) ;
+
+
+let number3 =  document.getElementById('number3');
+let counter3 = 0;
+setInterval(() => {
+    if(counter3 == 95) {
+        clearInterval () ;
+    }
+    else {
+        counter3 += 1;
+        number3.innerHTML = counter3 + '%';    
+    }
+}, 30) ;
+
+
+let number4 =  document.getElementById('number4');
+let counter4 = 0;
+setInterval(() => {
+    if(counter4 == 60) {
+        clearInterval () ;
+    }
+    else {
+        counter4 += 1;
+        number4.innerHTML = counter4 + '%';    
+    }
+}, 30) ;
+
+
+let number5 =  document.getElementById('number5');
+let counter5 = 0;
+setInterval(() => {
+    if(counter5 == 70) {
+        clearInterval () ;
+    }
+    else {
+        counter5 += 1;
+        number5.innerHTML = counter5 + '%';    
+    }
+}, 30) ;
+
+
+let number6 =  document.getElementById('number6');
+let counter6 = 0;
+setInterval(() => {
+    if(counter6 == 55) {
+        clearInterval () ;
+    }
+    else {
+        counter6 += 1;
+        number6.innerHTML = counter6 + '%';    
+    }
+}, 30) ;
+
+
+let number7 =  document.getElementById('number7');
+let counter7 = 0;
+setInterval(() => {
+    if(counter7 == 60) {
+        clearInterval () ;
+    }
+    else {
+        counter7 += 1;
+        number7.innerHTML = counter7 + '%';    
+    }
+}, 30) ;
+
+
+
+
 
 
 // //스크롤 탑 값
