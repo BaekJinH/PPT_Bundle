@@ -901,7 +901,7 @@ canvas {
 
 .floor {
   position: absolute;
-  bottom: 0%;
+  bottom: -1%;
   left: 0;
   z-index: 3;
   width: 100%;
