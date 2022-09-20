@@ -888,17 +888,62 @@ canvas {
 
 #mySelfTitle {
   position:absolute;
-  left:15%;
-  bottom:17%;
+  left:11%;
+  bottom:27%;
 }
 #mySelfTitle > h3 {
-  font-size:24px;
+  font-size:25px;
   color:white;
-  font-weight:200;
+  font-weight:400;
 }
 
+.upDownText {
+  position:absolute;
+  bottom:24.5%;
+  left:33%;
+  width:500px;
+}
+.upDownText  > span {
+  color:white;
+  font-size:22px;
+  font-weight:200;
+  margin-right:30px;
+  position: absolute;;
+}
 
-
+.upDownText > span:nth-of-type(1) {
+  left : 0%;
+}
+.upDownText > span:nth-of-type(2) {
+  left : 10%
+}
+.upDownText > span:nth-of-type(3) {
+  left : 20%
+}
+.upDownText > span:nth-of-type(4) {
+  left : 30%
+}
+.upDownText > span:nth-of-type(5) {
+  left : 40%
+}
+.upDownText > span:nth-of-type(6) {
+  left : 50%
+}
+.upDownText > span:nth-of-type(7) {
+  left : 60%
+}
+.upDownText > span:nth-of-type(8) {
+  left : 70%
+}
+.upDownText > span:nth-of-type(9) {
+  left : 80%
+}
+.upDownText > span:nth-of-type(10) {
+  left : 90%
+}
+.upDownText > span:nth-of-type(11) {
+  left : 100%
+}
 .floor {
   position: absolute;
   bottom: -1%;
@@ -1274,13 +1319,13 @@ canvas {
 .skillTitle {
   display: inline-block;
   position: absolute;
-  bottom: 17%;
+  bottom: 52%;
   left: 5%;
 }
 
 .skillTitle h2 {
-  font-size: 24px;
-  font-weight: 200;
+  font-size: 25px;
+  font-weight: 400;
   color:white;
 }
 
@@ -2232,7 +2277,7 @@ circle {
 
 .roadMapHead {
   position:absolute;
-  top:20%;
+  top:17%;
   left:8%;
 
 }
@@ -2242,7 +2287,7 @@ circle {
 
 .roadMapHead > h2 {
   font-size: 24px;
-  font-weight: 200;
+  font-weight: 400;
   color:white;
 }
 
@@ -2440,25 +2485,42 @@ circle {
 .ending {
   color: #fff;
   position: absolute;
-  bottom: 23%;
-  left: 50%;
+  bottom: 33%;
+  left: 15%;
   transform : translateX(-50%);
 }
 
 .endTitle {
-  /* margin-bottom: 100px; */
 }
 
 .endTitle h2 {
-  font-size: 38px;
+  font-size: 24px;
   font-weight: 400;
-  line-height:60px;
+  line-height:50px;
   text-align:center;
 }
 
-/* .contact {}
-  
-  .contact ul {} */
+.contact {
+  position: absolute;
+  top:157%;
+  left:50%;
+  transform : translateX(-50%);
+}
+
+.contact > h4 {
+  font-size:22px;
+  font-weight : 400;
+  margin-bottom:6px;
+  text-align: center;
+}
+.contact > h4 > a {
+  color:white; 
+  font-weight : 400;
+}
+.numb {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .contact ul li {
   margin-bottom: 25px;

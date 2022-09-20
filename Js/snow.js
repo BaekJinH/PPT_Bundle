@@ -17,3 +17,16 @@ function createSnowFlake() {
         snow_flake.remove();
     }, 5000)
 }
+
+
+
+// 마지막 페이지에서 눈이 뒷 페이지로 이동하기
+
+// $(window).scroll(function () {
+//     var scrollValue = $(this).scrollTop();
+
+//     if (scrollValue > $('.s9').offset().top) {
+//         $('.fa-snowflake').css({zIndex:'-1'})
+
+//     }
+// })
