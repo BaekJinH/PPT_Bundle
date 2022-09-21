@@ -16,8 +16,16 @@ let main = gsap.timeline({
 });
 
 
+$('.project').click(function(){
+    $(".btnWrap").toggleClass('btnWrapOff')
+})
+
+$('.modalBgFix').click(function(){
+    $('.btnWrap').removeClass('btnWrapOff')
+})
+
 // 텍스트 깜빡임 효과
-const content = "방문해주셔서 감사합니다."
+const content = "신입 프론트엔드 개발자 백진혁입니다."
 
 const text = document.querySelector('.typingText');
 let index = 0 ;
@@ -56,9 +64,10 @@ $(window).scroll(function () {
 
 // hambuger menu
 $('.btnWrap').click(function(){
+    $('.mask').toggleClass('maskOn')
     $('.hambuger').toggleClass('active');
     $('nav').toggleClass('active');
-    $(this).stop().css({zIndex:15})
+    // $(this).stop().css({zIndex:15})
 })
 
 
@@ -287,7 +296,6 @@ function random(min, max) {
 
 
 
-
 const modal = document.querySelector("#modal");
 const modalWrap = document.querySelector(".modalWrap");
 const btnModal = document.querySelectorAll(".project");
@@ -299,68 +307,45 @@ const date = document.querySelector(".date");
 
 //모달에 출력되어야할 값들의 배열
 const modalInfo = [{
-    url: "https://baekjinh.github.io/project_1/",
-    bg:"background-image: url('./assets/img/1.png')",
+    url: "https://baekjinh.github.io/Project_Mquery-2/",
+    bg:"background-image: url('./img/project_05.png')",
     client: "STUDY",
-    description: "WEB PROP SHOP SITE",
+    description: "GAME SITE",
     role: "HTML, CSS, JAVASCRIPT, JQUERY",
-    date: "2022.04"
+    date: "2022.08"
 },
 {
-    url: "https://seol1059.github.io/No.2/",
-    bg:"background-image: url('./assets/img/2.png')",
+    url: "https://baekjinh.github.io/AJAX_1/",
+    bg:"background-image: url('./img/project_04.png')",
     client: "STUDY",
-    description: "WEB CITY POP SITE",
-    role: "HTML, CSS, JAVASCRIPT, JQUERY",
-    date: "2022.05"
+    description: "LIBRARY SITE",
+    role: "HTML, CSS, JAVASCRIPT, JQUERY , AJAX",
+    date: "2022.08"
 },
 {
-    url: "https://seol1059.github.io/No.3/",
-    bg:"background-image: url('./assets/img/3.png')",
+    url: "https://baekjinh.github.io/project_mquery-1-/",
+    bg:"background-image: url('./img/project_03.png')",
     client: "STUDY",
-    description: "GRAPHIC ARTWORK SITE",
+    description: "INTERIOR SITE",
     role: "HTML, CSS, JAVASCRIPT, JQUERY",
     date: "2022.06"
 },
 {
-    url: "https://tuesdayy96.github.io/team_project/",
-    bg:"background-image: url('./assets/img/6.png')",
+    url: "https://kimddddh98.github.io/team_project/sub_jh.html",
+    bg:"background-image: url('./img/project_02.png')",
     client: "STUDY",
-    description: "KOREAN AIR SITE",
+    description: "EVERLAND PROMOTION",
     role: "HTML, CSS, JAVASCRIPT, JQUERY",
     date: "2022.05"
 },
 {
-    url: "https://seol1059.github.io/No.4/",
-    bg:"background-image: url('./assets/img/4.png')",
+    url: "https://baekjinh.github.io/project_1/",
+    bg:"background-image: url('./img/project_01.png')",
     client: "STUDY",
-    description: "LA CASA DE PAPEL SITE",
-    role: "HTML, CSS, JAVASCRIPT, JQUERY",
-    date: "2022.07"
+    description: "MARKET SITE",
+    role: "HTML, CSS",
+    date: "2022.04"
 },
-{
-    url: "https://seol1059.github.io/No.5/",
-    bg:"background-image: url('./assets/img/5.png')",
-    client: "STUDY",
-    description: "BINGGRAE SITE",
-    role: "HTML, CSS, JAVASCRIPT, JQUERY",
-    date: "2022.07"
-},
-{
-    url: "https://seol1059.github.io/Millie/",
-    bg:"background-image: url('./assets/img/7.png')",
-    client: "STUDY",
-    description: "Millie SITE",
-    role: "HTML, CSS, JAVASCRIPT, JQUERY , AJAX",
-    date: "2022.07"
-},
-// {
-//     url: "https://seol1059.github.io/Portfolio/",
-//     client: "STUDY",
-//     description: "PORTFOLIO_HTML SITE",
-//     role: "HTML, CSS, JAVASCRIPT, JQUERY",
-//     date: "2022.08"
-// },
 {
     url: "https:",
     client: "STUDY",
@@ -369,6 +354,7 @@ const modalInfo = [{
     date: "-"
 }
 ]
+
 
 //프로젝트를 클릭하기 위한 project 반복 
 btnModal.forEach((btn, index) => {
@@ -532,8 +518,6 @@ console.log(activeCont);
 
 
 
-
-
 var HEIGHT,WIDTH;
     var lake = document.getElementById("lake");
     window.addEventListener('resize', handleResize, false);
@@ -583,4 +567,3 @@ var HEIGHT,WIDTH;
     }
     
     window.requestAnimationFrame(AnimateBaseFrequency);
-
